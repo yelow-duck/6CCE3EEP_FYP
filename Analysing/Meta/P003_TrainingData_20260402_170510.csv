@@ -1,0 +1,11 @@
+ParticipantID,AttemptNum,TargetColor,ChosenColor,IsCorrect,ReactionTime_sec
+P003,1,Blue,Blue,1,4.1674
+P003,2,Blue,Blue,1,1.2356
+P003,3,Blue,Blue,1,1.0979
+P003,4,Red,Red,1,1.3749
+P003,5,Red,Red,1,0.6387
+P003,6,Blue,Blue,1,0.6105
+P003,7,Blue,Blue,1,0.6107
+P003,8,Blue,Blue,1,0.6247
+P003,9,Red,Red,1,0.6806
+P003,10,Blue,Blue,1,0.4308
