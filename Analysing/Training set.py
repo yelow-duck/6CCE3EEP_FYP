@@ -12,6 +12,7 @@ import os
 path = "E:\\Project\\6CCE3EEP_FYP\\Analysing\\PC\\"
 training_files = glob.glob(os.path.join(path, '*_TrainingData_*.csv'))
 df_train = pd.concat([pd.read_csv(os.path.join(path, f)) for f in training_files])
+df_train = df_train[df_train['AttemptNum'] <= 20]
 
 # ==========================================
 # 1. 第一部分：绘制反应时间趋势图
