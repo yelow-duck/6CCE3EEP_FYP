@@ -37,7 +37,7 @@ baseline_file_path = os.path.join(folder_path_train, 'Training_Converged_Results
 train_baseline_df = pd.read_csv(baseline_file_path)
 
 # 我们采用“最后5次的平均趋近时间”作为该被试的个人生理基线
-baseline_dict = dict(zip(train_baseline_df['ParticipantID'], train_baseline_df['Converged_Time_Last5_sec']))
+#baseline_dict = dict(zip(train_baseline_df['ParticipantID'], train_baseline_df['Converged_Time_Last5_sec']))
 
 # ==========================================
 # 2. 数据处理：计算调整后的反应时间 (Adjusted Reaction Time)

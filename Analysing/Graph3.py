@@ -25,7 +25,7 @@ df['Target_Pitch'] = df['TargetNumber'].apply(lambda x: elevation_map[int(x) % 4
 # 2. 【核心升级】程序自动检索 Trial 编号
 # ==========================================
 # 🎯 在这里设定你想观察的“目标编号 (0-31)”
-TARGET_TO_OBSERVE = 27 
+TARGET_TO_OBSERVE = 9 
 
 # 让程序自动去茫茫数据海中寻找，哪些 Trial 测试了这个目标
 trials_A = df[(df['Phase'] == 'HRTF_A') & (df['TargetNumber'] == TARGET_TO_OBSERVE)]['Trial'].unique()

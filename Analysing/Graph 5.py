@@ -82,8 +82,8 @@ sns.lineplot(
     errorbar=('ci', 95), # 画出 95% 置信区间阴影 (老版本seaborn可能是 ci=95)
     ax=axes[0]
 )
-axes[0].set_title('水平方向 (Yaw) 角度收敛曲线', fontsize=15, fontweight='bold', pad=10)
-axes[0].set_ylabel('绝对角度误差 (度)', fontsize=12)
+axes[0].set_title('Horizontal (Yaw) angle convergence', fontsize=15, fontweight='bold', pad=10)
+axes[0].set_ylabel('Absolute angle error (degrees)', fontsize=12)
 
 # ----------------- 右图：垂直高度 (Pitch) 收敛 -----------------
 sns.lineplot(
@@ -96,12 +96,12 @@ sns.lineplot(
     errorbar=('ci', 95),
     ax=axes[1]
 )
-axes[1].set_title('垂直方向 (Pitch) 角度收敛曲线', fontsize=15, fontweight='bold', pad=10)
+axes[1].set_title('Vertical (Pitch) angle convergence', fontsize=15, fontweight='bold', pad=10)
 axes[1].set_ylabel('') # 共用语意，省略 Y 轴标签
 
 # ----------------- 全局美化 -----------------
 for ax in axes:
-    ax.set_xlabel('时间 (秒)', fontsize=12)
+    ax.set_xlabel('Time (seconds)', fontsize=12)
     ax.set_xlim(0, MAX_TIME_TO_PLOT)
     ax.set_ylim(bottom=0) # 误差最小就是 0 度，也就是完美对齐
     
@@ -119,7 +119,7 @@ for ax in axes:
         labels.pop(idx)
     ax.legend(handles=handles, labels=labels, loc='upper right')
 
-plt.suptitle('头部追踪运动学：目标角度误差时间收敛对比', fontsize=18, fontweight='bold', y=1.05)
+plt.suptitle('Head Tracking Kinematics: Target Angle Error Time Convergence Comparison', fontsize=18, fontweight='bold', y=1.05)
 
 plt.savefig('Fig5_Time_Series_Convergence.png', dpi=300, bbox_inches='tight')
 plt.show()
