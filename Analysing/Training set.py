@@ -9,7 +9,7 @@ import os
 # 0. 读取和整合数据
 # ==========================================
 # 自动读取当前目录下所有包含 "TrainingData" 的 CSV 文件
-path = "E:\\Project\\6CCE3EEP_FYP\\Analysing\\PC\\"
+path = "E:\\Project\\6CCE3EEP_FYP\\Analysing\\PC"
 training_files = glob.glob(os.path.join(path, '*_TrainingData_*.csv'))
 df_train = pd.concat([pd.read_csv(os.path.join(path, f)) for f in training_files])
 df_train = df_train[df_train['AttemptNum'] <= 20]

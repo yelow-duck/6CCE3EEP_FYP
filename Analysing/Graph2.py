@@ -134,5 +134,5 @@ cbar.set_label('Average Adjusted Search Time (seconds)', fontsize=12, labelpad=1
 plt.suptitle('Spatial Auditory Localization Time Distribution Comparison (Larger Red Bubbles Indicate Longer Times)', fontsize=18, fontweight='bold', y=1.05)
 
 # 保存高刷大图
-plt.savefig('Figure 2 Spatial_BubblePlot.png', dpi=300, bbox_inches='tight')
+plt.savefig('Figure 2 Spatial_BubblePlot adjusted.png', dpi=300, bbox_inches='tight')
 plt.show()
