@@ -129,10 +129,10 @@ sm = plt.cm.ScalarMappable(cmap='YlOrRd', norm=plt.Normalize(vmin=vmin, vmax=vma
 sm.set_array([])
 cbar = fig.colorbar(sm, ax=axes, orientation='vertical', fraction=0.02, pad=0.02)
 # 稍微修改了 Colorbar 的标签以匹配数据逻辑
-cbar.set_label('Average Adjusted Search Time (seconds)', fontsize=12, labelpad=10)
+cbar.set_label('Average Search Time (seconds)', fontsize=12, labelpad=10)
 
 plt.suptitle('Spatial Auditory Localization Time Distribution Comparison (Larger Red Bubbles Indicate Longer Times)', fontsize=18, fontweight='bold', y=1.05)
 
 # 保存高刷大图
-plt.savefig('Figure 2 Spatial_BubblePlot adjusted.png', dpi=300, bbox_inches='tight')
+plt.savefig('Figure 2 Spatial_BubblePlot.png', dpi=300, bbox_inches='tight')
 plt.show()
